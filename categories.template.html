@@ -1,0 +1,18 @@
+<div class="container col-6 p-4">
+    <h2 class="text-center">CATEGORIES</h2>
+    <p ui-sref="home" class="text-primary"><a href="#">< Back to home</a></p>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Short Name</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="category in $ctrl.categories">
+          <td><strong>{{ category.short_name }}</strong></td>
+          <td><a ui-sref="items({ categoryShortName: category.short_name })">{{ category.name }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

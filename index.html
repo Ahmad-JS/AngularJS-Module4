@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant Menu App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.29/angular-ui-router.min.js"></script>
+    <script src="js\menuapp.module.js"></script>
+    <script src="js\data.module.js"></script>
+    <script src="js\menudata.service.js"></script>
+    <script src="js\categories.component.js"></script>
+    <script src="js\items.component.js"></script>
+    <script src="js\route.js"></script>
+</head>
+
+<body>
+  <div ui-view="header"></div>
+  <div ui-view></div>
+</body>
+
+</html>
